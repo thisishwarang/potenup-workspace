@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table</title>
+  <style>
+    thead {
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>셀 병합하기</h1>
+  <table border="1">
+    <tr>
+      <td colspan="2" rowspan="2" width="130" height="130"></td>
+      <td width="80"></td>
+      <td width="200"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td width="70" height="50"></td>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+      <td height="130"></td>
+      <td colspan="3"></td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h1>테이블 내에 구조 나누기</h1>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>이름</th>
+        <th>나이</th>
+        <th>주소</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>홍길동</td>
+        <td>22</td>
+        <td>서울</td>
+      </tr>
+      <tr>
+        <td>동길홍</td>
+        <td>42</td>
+        <td>인천</td>
+      </tr>
+      <tr>
+        <td>콩콩콩</td>
+        <td>222</td>
+        <td>이천</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">총인원</td>
+        <td>3명</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

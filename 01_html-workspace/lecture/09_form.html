@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>input</title>
+</head>
+<body>
+  <h1>input 태그</h1>
+
+  <h2> 텍스트 관련 input</h2>
+  <label for="text">text input</label>
+  <input type="text" id="text"/> <br>
+
+  <label for="password">password input</label>
+  <input type="password" id="password" /> <br>
+
+  <label for="search">search input</label>
+  <input type="search" id="search"/> <br>
+
+  <hr>
+
+  <h1>form 관련 태그</h1>
+  <form method="get">
+    <fieldset>
+      <legend>회원가입</legend>
+      아이디 : <input type="text" maxlength="12" name="userId"> <br>
+      비밀번호 : <input type="password" maxlength="15" name="userPw"> <br>
+
+      <input type="submit" value="회원가입">
+    </fieldset>
+  </form>
+
+  <form>
+    <fieldset>
+      <legend>게시글 작성폼</legend>
+      제목 : <input type="text" name="title" size="35">
+    </fieldset>
+  </form>
+</body>
+</html>
