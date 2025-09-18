@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>selector</title>
+    <style>
+      #test {
+        display: flex;
+        gap: 1rem;
+      }
+      #test * {
+        background-color: pink;
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+      }
+      #test div:first-child:active {
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="test">
+      <div>active 테스트</div>
+      <div>hover 테스트</div>
+    </div>
+  </body>
+</html>
