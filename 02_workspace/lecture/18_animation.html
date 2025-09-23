@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" style="animation: bounce 2s infinite alternate">
+        bounce
+      </div>
+      <div class="box" style="animation: rotate 3s linear 3">rotate</div>
+      <div class="box" style="animation: pulse 1.5s 2s infinite">pulse</div>
+      <div class="box" style="">slide</div>
+      <div class="box" style="">shake</div>
+    </div>
+
+    <hr style="margin: 50px 0px" />
+
+    <style>
+      @keyframes colorChange {
+        0% {
+          background: rgb(10, 247, 247);
+        }
+        50% {
+          background: rgb(9, 158, 158);
+        }
+        100% {
+          background: rgb(180, 79, 79);
+        }
+      }
+      .complex-animation {
+        animation: rotate 3s linear infinite,
+          colorChange 2s ease-in-out infinite;
+      }
+    </style>
+
+    <div class="container">
+      <div class="box complex-animation">복합<br />애니메이션</div>
+    </div>
+  </body>
+</html>
